@@ -94,4 +94,5 @@ My contributions were completed as part of a group project. I would like to ackn
 **Profiles**
 
 GitHub: https://github.com/jatinder-d
+
 LinkedIn: www.linkedin.com/in/jatinderdhaliwal
