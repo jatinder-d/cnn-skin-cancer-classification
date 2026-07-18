@@ -25,7 +25,7 @@ The information below shows the project workflow for my role:
 8. Adjust parameters and rerun the datasets through the model for potential improvements in accuracy.
 9. Report on the results obtained for both datasets and comment on the optimal epoch for model performance.
 
-![CNN Model Architecture](figures/cnn-architecture.jpg)
+![CNN Model Architecture](figures/cnn-model-architecture.png)
 
 ## Results
 ### Optimal Epoch
