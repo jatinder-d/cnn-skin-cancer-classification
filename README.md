@@ -79,7 +79,7 @@ The true negative rate for the clean dataset was significantly higher than the u
 ## Author
 **Jatinder Dhaliwal**
 
-MEng Biomedical Engineering Graduate from Queen Mary University of London
+MEng Biomedical Engineering Graduate, Queen Mary University of London
 
 **Acknowledgements**
 
@@ -93,6 +93,6 @@ My contributions were completed as part of a group project. I would like to ackn
 
 **Profiles**
 
-GitHub: https://github.com/jatinder-d
+GitHub: [Jatinder Dhaliwal](https://github.com/jatinder-d)
 
 LinkedIn: www.linkedin.com/in/jatinderdhaliwal
