@@ -14,7 +14,7 @@ The key responsibilities for my role was as follows:
 - Optimised model parameters to assess their impact on performance.
 
 ## Methodology
-Below shows the project workflow for my role:
+The information below shows the project workflow for my role:
 1. Conducted a literature review looking at human assessments of skin cancer, existing technologies, deep learning algorithms in medical settings, key model parameters, and medical device regulations.
 2. Collected 200 skin lesion images to train an initial classification model, provided by the project supervisor.
 3. Curated a larger dataset of approximately 6000 images, equal parts benign and malignant.
@@ -25,4 +25,48 @@ Below shows the project workflow for my role:
 8. Adjust parameters and rerun the datasets through the model for potential improvements in accuracy.
 9. Report on the results obtained for both datasets and comment on the optimal epoch for model performance.
 
+![CNN Model Architecture](figures/cnn-architecture.jpg)
+
 ## Results
+### Optimal Epoch
+Firstly, the optimal epoch was found at 25, providing the best balance between accuracy and computational efficiency. The figures below illustrate the validation accuracy and validation loss against epoch.
+
+![Validation Accuracy Against Epoch](figures/validation-accuracy-against-epoch.jpg)
+
+![Validation Loss Against Epoch](figures/validation-loss-against-epoch.jpg)
+
+### Performance Metrics
+The table below shows a table of each performance metric for both datasets at 25 epochs. The unclean dataset outperformed the clean dataset on most metrics, but the clean dataset showed superior specificity and false positive rate.
+
+| **Metric**      | **Unclean Dataset** | **Clean Dataset** |
+| --------------- | ------------------: | ----------------: |
+| Sensitivity (%) |           **90.80** |             63.24 |
+| Specificity (%) |               73.51 |         **88.45** |
+| Accuracy (%)    |           **84.40** |             79.38 |
+| Precision (%)   |           **86.58** |             75.48 |
+| F1 Score        |          **0.8864** |            0.6882 |
+| True Positives  |             **316** |               117 |
+| True Negatives  |                 136 |           **291** |
+| False Positives |                  49 |            **38** |
+| False Negatives |              **32** |                68 |
+
+### ROC Curve
+The figure below shows the ROC curve for both datasets, from which the area under the curve (AUC) provides a measure of the performance at all classification thresholds.
+
+![ROC Curve](figures/roc-curve.jpg)
+
+The AUC of the unclean dataset (0.91) slightly outperformed the clean dataset (0.89), suggesting higher model performance across lenient and strict criteria.
+
+### Precision-Recall Curve
+The precision-recall curve shown below indicates how well the model maintains true positive predictions while minimising false positives, using average precision (AP) to combine this into one value.
+
+![Precision-Recall Curve](figures/precision-recall-curve.jpg)
+
+The AP of the model was higher on the unclean dataset, at 0.94 compared to 0.84 for the clean dataset, suggesting that the model could more consistently identify malignancy while rarely misclassifying benign lesions in the unclean dataset.
+
+### Confusion Matrices
+A direct comparison of true positives, true negatives, false positives, and false negatives, for both datasets can be seen in the confusion matrices below. 
+
+![Confusion Matrices](figures/confusion-matrices.jpg)
+
+The true negative rate for the clean dataset was significantly higher than the unclean dataset; however, the false negative rate was also higher, suggesting that the model had established a stricter malignant criteria for the clean dataset. The model correctly identified many more malignant cases on the unclean dataset, with a slightly higher number of false positives. Overall, the model performed at a higher accuracy on the unclean dataset.
