@@ -78,9 +78,11 @@ The true negative rate for the clean dataset was significantly higher than the u
 
 ## Author
 **Jatinder Dhaliwal**
+
 MEng Biomedical Engineering Graduate from Queen Mary University of London
 
 **Acknowledgements**
+
 My contributions were completed as part of a group project. I would like to acknowledge the efforts of my team members towards the project's success:
 
 - Gurtej Panesar - Helped with model development and dataset curation, performed bias monitoring.
@@ -90,5 +92,6 @@ My contributions were completed as part of a group project. I would like to ackn
 - Holly Azarinejad - Continuously tracked classification performance over time, highlighting model drift.
 
 **Profiles**
-GitHub: 
+
+GitHub: https://github.com/jatinder-d
 LinkedIn: www.linkedin.com/in/jatinderdhaliwal
