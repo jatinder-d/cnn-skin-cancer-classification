@@ -70,3 +70,25 @@ A direct comparison of true positives, true negatives, false positives, and fals
 ![Confusion Matrices](figures/confusion-matrices.jpg)
 
 The true negative rate for the clean dataset was significantly higher than the unclean dataset; however, the false negative rate was also higher, suggesting that the model had established a stricter malignant criteria for the clean dataset. The model correctly identified many more malignant cases on the unclean dataset, with a slightly higher number of false positives. Overall, the model performed at a higher accuracy on the unclean dataset.
+
+## Future Work
+- Use international databases to collect skin lesion images for a more even skin tone distribution.
+- Update the model to perform multi-classification of benign and malignant subtypes.
+- Adjust parameters other than epoch to study effect on performance and maximise accuracy.
+
+## Author
+**Jatinder Dhaliwal**
+MEng Biomedical Engineering Graduate from Queen Mary University of London
+
+**Acknowledgements**
+My contributions were completed as part of a group project. I would like to acknowledge the efforts of my team members towards the project's success:
+
+- Gurtej Panesar - Helped with model development and dataset curation, performed bias monitoring.
+- Nadia Mohammad - Developed user interface (UI) of the mobile application.
+- Kennasa Ahmed - Incorporated XAI alongside model classification, combined front-end and back-end.
+- Emily Speed - Created image preprocessing pipeline and U-Net segmentation model.
+- Holly Azarinejad - Continuously tracked classification performance over time, highlighting model drift.
+
+**Profiles**
+GitHub: 
+LinkedIn: www.linkedin.com/in/jatinderdhaliwal
