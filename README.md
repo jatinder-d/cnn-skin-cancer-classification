@@ -20,7 +20,7 @@ Below shows the project workflow for my role:
 3. Curated a larger dataset of approximately 6000 images, equal parts benign and malignant.
 4. Cleaned the dataset by removing images with significant obstructions and low-quality.
 5. Separate images into two datasets - unclean and clean.
-6. Develop the convolutional neural network (CNN) architecture and introduce parameters such as batch normalisation, convolutional blocks and dropout.
+6. Develop a sequential convolutional neural network (CNN) architecture, use the Keras ImageDataGenerator for image preprocessing, and introduce parameters such as batch normalisation, convolutional blocks and dropout.
 7. Run both datasets through the model and obtain performance metrics.
 8. Adjust parameters and rerun the datasets through the model for potential improvements in accuracy.
 9. Report on the results obtained for both datasets and comment on the optimal epoch for model performance.
