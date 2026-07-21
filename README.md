@@ -36,7 +36,7 @@ Firstly, the optimal epoch was found at 25, providing the best balance between a
 ![Validation Loss Against Epoch](figures/validation-loss-against-epoch.jpg)
 
 ### Performance Metrics
-The table below shows a table of each performance metric for both datasets at 25 epochs. The unclean dataset outperformed the clean dataset on most metrics, but the clean dataset showed superior specificity and false positive rate.
+The table below shows a table of each performance metric for both datasets. The unclean dataset outperformed the clean dataset on most metrics, but the clean dataset showed superior specificity and false positive rate.
 
 | Metric | Uncurated Model | Curated Model | Higher-Performing Model |
 |---|---:|---:|---|
