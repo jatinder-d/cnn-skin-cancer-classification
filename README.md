@@ -72,7 +72,6 @@ The table below shows a table of each performance metric for both datasets. The 
 - Use international databases to collect skin lesion images for a more even skin tone distribution.
 - Update the model to perform multi-classification of benign and malignant subtypes.
 - Adjust parameters other than epoch to study effect on performance and maximise accuracy.
-- 
 
 ## Author
 **Jatinder Dhaliwal**
