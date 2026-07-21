@@ -35,17 +35,6 @@ Firstly, the optimal epoch was found at 25, providing the best balance between a
 
 ![Validation Loss Against Epoch](figures/validation-loss-against-epoch.jpg)
 
-### Performance Metrics
-The table below shows a table of each performance metric for both datasets. The unclean dataset outperformed the clean dataset on most metrics, but the clean dataset showed superior specificity and false positive rate.
-
-| Metric | Uncurated Model | Curated Model | Higher-Performing Model |
-|---|---:|---:|---|
-| Accuracy | 80.1% | 51.6% | Uncurated |
-| Sensitivity | 87.9% | 39.7% | Uncurated |
-| Specificity | 65.4% | 74.1% | Curated |
-| Precision | 82.7% | 74.2% | Uncurated |
-| F1 Score | 0.852 | 0.517 | Uncurated |
-
 ### ROC Curve
 The figure below shows the ROC curve for both datasets, from which the area under the curve (AUC) provides a measure of the performance at all classification thresholds.
 
@@ -66,6 +55,17 @@ A direct comparison of true positives, true negatives, false positives, and fals
 ![Confusion Matrices](figures/confusion-matrices.png)
 
 The true negative rate for the clean dataset was significantly higher than the unclean dataset; however, the false negative rate was also higher, suggesting that the model had established a stricter malignant criteria for the clean dataset. The model correctly identified many more malignant cases on the unclean dataset, with a slightly higher number of false positives. Overall, the model performed at a higher accuracy on the unclean dataset.
+
+### Performance Metrics
+The table below shows a table of each performance metric for both datasets. The unclean dataset outperformed the clean dataset on most metrics, but the clean dataset showed superior specificity and false positive rate.
+
+| Metric | Uncurated Model | Curated Model | Higher-Performing Model |
+|---|---:|---:|---|
+| Accuracy | 80.1% | 51.6% | Uncurated |
+| Sensitivity | 87.9% | 39.7% | Uncurated |
+| Specificity | 65.4% | 74.1% | Curated |
+| Precision | 82.7% | 74.2% | Uncurated |
+| F1 Score | 0.852 | 0.517 | Uncurated |
 
 ## Future Work
 - Use international databases to collect skin lesion images for a more even skin tone distribution.
