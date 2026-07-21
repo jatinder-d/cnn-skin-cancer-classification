@@ -38,17 +38,13 @@ Firstly, the optimal epoch was found at 25, providing the best balance between a
 ### Performance Metrics
 The table below shows a table of each performance metric for both datasets at 25 epochs. The unclean dataset outperformed the clean dataset on most metrics, but the clean dataset showed superior specificity and false positive rate.
 
-| **Metric**      | **Unclean Dataset** | **Clean Dataset** |
-| --------------- | ------------------: | ----------------: |
-| Sensitivity (%) |           **90.80** |             63.24 |
-| Specificity (%) |               73.51 |         **88.45** |
-| Accuracy (%)    |           **84.40** |             79.38 |
-| Precision (%)   |           **86.58** |             75.48 |
-| F1 Score        |          **0.8864** |            0.6882 |
-| True Positives  |             **316** |               117 |
-| True Negatives  |                 136 |           **291** |
-| False Positives |                  49 |            **38** |
-| False Negatives |              **32** |                68 |
+| Metric | Uncurated Model | Curated Model | Higher-Performing Model |
+|---|---:|---:|---|
+| Accuracy | 80.1% | 51.6% | Uncurated |
+| Sensitivity | 87.9% | 39.7% | Uncurated |
+| Specificity | 65.4% | 74.1% | Curated |
+| Precision | 82.7% | 74.2% | Uncurated |
+| F1 Score | 0.852 | 0.517 | Uncurated |
 
 ### ROC Curve
 The figure below shows the ROC curve for both datasets, from which the area under the curve (AUC) provides a measure of the performance at all classification thresholds.
