@@ -67,7 +67,7 @@ The AP of the model was higher on the unclean dataset, at 0.94 compared to 0.84 
 ### Confusion Matrices
 A direct comparison of true positives, true negatives, false positives, and false negatives, for both datasets can be seen in the confusion matrices below. 
 
-![Confusion Matrices](figures/confusion-matrices.jpg)
+![Confusion Matrices](figures/confusion-matrices.png)
 
 The true negative rate for the clean dataset was significantly higher than the unclean dataset; however, the false negative rate was also higher, suggesting that the model had established a stricter malignant criteria for the clean dataset. The model correctly identified many more malignant cases on the unclean dataset, with a slightly higher number of false positives. Overall, the model performed at a higher accuracy on the unclean dataset.
 
